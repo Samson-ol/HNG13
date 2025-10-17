@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Stage 0 Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="main-header">
+        <h1 style="color: white; text-align: center;">HNG Stage 0 Profile Card</h1>
+    </header>
+
+    <!-- Profile Card Root Container (using <article> for semantics) -->
+    <article class="profile-card" data-testid="test-profile-card">
+
+        <!-- Avatar Section (using <figure> for semantics) -->
+        <figure class="profile-avatar">
+            <img src="IMG_0200.JPG" alt="Profile picture of Samson Oloyede" data-testid="test-user-avatar">
+            <!-- <figcaption>Optional caption if you want one</figcaption> -->
+        </figure>
+
+        <!-- Header Section (for name) -->
+        <header data-testid="test-user-name">
+            <h1>Samson Oloyede</h1>
+        </header>
+
+        <!-- Short Biography -->
+        <p data-testid="test-user-bio">
+            A passionate frontend developer currently interning at HNG, eager to learn and build amazing web experiences.
+        </p>
+
+        <!-- Current Time (in milliseconds) -->
+        <p>Current UTC Time (ms): <span data-testid="test-user-time"></span></p>
+
+        <!-- Social Links List (using <nav> and <ul> for semantics) -->
+        <nav data-testid="test-user-social-links">
+            <h2>Social Links</h2>
+            <ul>
+                <li><a href="https://github.com/Samson-ol" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/samson-oloyede-64037228b" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                <li><a href="https://slack.com/Samson-ol" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-slack">Slack</a></li>
+            </ul>
+        </nav>  
+
+        <!-- Hobbies Section -->
+        <section class="hobbies-dislikes-section">
+            <h2 data-testid="test-user-hobbies-title">Hobbies</h2> <!-- Added a title for semantics, not explicitly required for test-id-->
+            <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Drumming</li>
+            </ul>
+
+            <h2 data-testid="test-user-dislikes-title">Dislikes</h2> <!-- Added a title for semantics, not explicitly required for test-id-->
+            <ul data-testid="test-user-dislikes">
+                <li>Theft</li>
+                <li>Cheating</li>
+                <li>Laziness</li>
+            </ul>
+        </section>
+
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* General body styling for the background */
+body {
+    background-color: #4c657f !important;
+    font-family: Arial, sans-serif; /* A clean, common font */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding around the card */
+    background-color: #f0f2f5; /* Light grey background */
+    display: grid; /* Use flexbox to center the card */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if viewport height allows) */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.main-header {
+    display: grid;
+    background-color: rgb(31, 31, 99);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Styling for the main profile card container */
+.profile-card {
+    display: grid !important;
+    grid-template-columns: 1fr; /* Single column layout */
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Internal spacing within the card */
+    width: 100%; /* Default to full width for mobile */
+    max-width: 500px; /* Limit max width for desktop */
+    text-align: center; /* Center text content inside the card */
+    box-sizing: border-box;
+}
+
+/* Styling for the profile avatar */
+.profile-avatar img {
+    width: 120px; /* Fixed width for the image */
+    height: 120px; /* Fixed height for the image */
+    border-radius: 50%; /* Make it perfectly circular */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border: 3px solid #007bff; /* A nice border color */
+}
+
+/* Styling for headings */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8em; /* Relative font size */
+}
+
+h2 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Styling for paragraphs (bio, time) */
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Styling for social links list */
+.profile-card nav ul {
+    display: flex;
+    flex-direction: row; /* Arrange links in a row */
+    justify-content: center;
+    gap: 20px;
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding */
+    margin-top: 10px;
+}
+
+.profile-card nav ul li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.profile-card nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Blue link color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-card nav ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for hobbies/dislikes lists */
+.hobbies-dislikes-section ul {
+    display: flex;
+    flex-direction: row; /* Stack list items vertically */
+    gap: 20px; /* Space between list items */
+    justify-content: center; /* Center items horizontally */
+    list-style: none; /* Remove bullet points inside the list item */
+    padding-left: 0; /* Align with text */
+    text-align: left; /* Align list items to the left */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hobbies-dislikes-section ul li {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Accessibility: Focus styles for keyboard navigation */
+a:focus {
+    outline: 2px solid #007bff; /* Blue outline on focus */
+    outline-offset: 3px; /* Space between outline and element */
+}
+
+
